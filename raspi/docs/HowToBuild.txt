@@ -1,0 +1,61 @@
+On a Windows machine with SSH access to a Raspberry PI, (herafter abbreviated as RPI)
+Download Oracle Java SE Embedded version 8 sdk, ARMv7 HardFP Little Endian
+http://www.oracle.com/technetwork/java/embedded/embedded-se/downloads/index.html 
+(ejdk-8u131-linux-armv6-vfp-hflt.tar.gz)
+
+{RPI IP address is currently 192.168.0.8)
+
+SSH to 192.168.0.8
+log in to /home/pi
+mkdir jre
+chmod 777 jre
+tar -xzvf ejdk-8u131-linux-armv6-vfp-hflt.tar.gz   (creates /home/pi/ejdk1.8.0_131)
+
+On Windows machine, start NetBeans
+	Tools->Plugins->installed->Java ME  (check box ancd click 'Activate')
+	-->Add Platform--> Select 'Remote Java Standard Edition"
+	* Name:  Remote RPI
+	* Host:  192.168.0.8
+	* User:  pi
+	* PW:    pi
+	* Remote JRE Path: Click 'Create' 
+		For EJDK browse to samba shared EJDK on the RPI S:\home\pi\ejdk1.8.0_131
+		(takes a few minutes to create JRE on the RPI
+		
+	* Working Dir: /home/pi/raspi
+	[Close]
+	
+	Click 'Test Platform'  (shoould connect OK)
+	Close NetBeans and re-open
+
+
+
+
+
+Install latest JDK  (jdk8u121 is currently installed on the RoboRIO)
+Install latest Java ME SDK (oracle-jmesdk-8-3-rr-win-bin.exe)
+Install latest NetBeans  (Currently using 8.2)
+Run NetBeans:
+	Tools->Plugins->installed->Java ME  (check box ancd click 'Activate')
+	-->Add Platform--> Select 'Remote Java Standard Edition"
+	* Name:  Remote RPI
+	* Host:  182.168.0.8
+	* User:  pi
+	* PW:    pi
+	* Remote JRE Path:   /usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt
+	[Close]
+	
+	Click 'Test Platform'  (shoould connect OK)
+	Close NetBeans and re-open
+	
+	
+New Project-> Java->Java Application
+* Project folder  C:\Users\acappon\Documents\2018_VisionSystem\raspi
+* Project name gripsvr
+* Check box to keep libraries in a dedicated folder
+
+Right click project -> Properties
+* Sources:  Make sure profile is Full JRE
+Run->Runtime Platfoem:  Choose "Remote PI" platform and enter "gripsvrConfig" when prompted for config name
+"OK"
+
