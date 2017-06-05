@@ -171,7 +171,7 @@ public class VideoServer {
 
     /**
      * Creates a new {@link VideoServer} that listens on the specified port and
-     * the deafult quality level.
+     * the default quality level.
      *
      * @param port the port the listen on
      *
