@@ -251,7 +251,7 @@ public class VideoServer {
                 // Reset response buffer to the end of the header
                 responseBufferOutputStream.markReset();
                 // Write content length
-                responseBufferOutputStream.write(("Content-Length: " + size + "\r\n\r\n").getBytes());
+                responseBufferOutputStream.write(("Content-Length: " + String.valueOf(size) + "\r\n\r\n").getBytes());
                 // Write image to response buffer
                 responseBufferOutputStream.write(socketBuffer, 0, size);
                 synchronized (clientSockets) {
