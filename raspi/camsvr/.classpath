@@ -1,50 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/work/2018_VisionSystem/raspi/camsvr/lib/camsvr.jar">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/pi/2018_VisionSystem/raspi/camsvr/lib/cscore.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/work/2018_VisionSystem/raspi/camsvr/lib/native/lib"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="camsvr/lib/native_armhf"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/work/2018_VisionSystem/raspi/camsvr/lib/cscore.jar">
+	<classpathentry kind="lib" path="/home/pi/2018_VisionSystem/raspi/camsvr/lib/NetworkTables.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/work/2018_VisionSystem/raspi/camsvr/lib/native/lib"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="camsvr/lib/native_armhf"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/work/2018_VisionSystem/raspi/camsvr/lib/cscore-sources.jar">
+	<classpathentry kind="lib" path="/home/pi/2018_VisionSystem/raspi/camsvr/lib/opencv.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/work/2018_VisionSystem/raspi/camsvr/lib/native/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/work/2018_VisionSystem/raspi/camsvr/lib/NetworkTables.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/work/2018_VisionSystem/raspi/camsvr/lib/native/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/work/2018_VisionSystem/raspi/camsvr/lib/NetworkTables-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/work/2018_VisionSystem/raspi/camsvr/lib/native/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/work/2018_VisionSystem/raspi/camsvr/lib/opencv-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/work/2018_VisionSystem/raspi/camsvr/lib/native/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/work/2018_VisionSystem/raspi/camsvr/lib/WPILib.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/work/2018_VisionSystem/raspi/camsvr/lib/native/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/work/2018_VisionSystem/raspi/camsvr/lib/WPILib-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/work/2018_VisionSystem/raspi/camsvr/lib/native/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/work/2018_VisionSystem/raspi/camsvr/lib/opencv-320.jar">
-		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/work/2018_VisionSystem/raspi/camsvr/lib/native/lib"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="camsvr/lib/native_armhf"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="bin"/>

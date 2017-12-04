@@ -15,11 +15,13 @@ import org.usfirst.frc.team4276.vision.GripPipeline;
 public class Main {
 
 	private final static Object imgLock = new Object();
-	private final static GripPipeline myGripPipeline = new GripPipeline();
+	private static GripPipeline myGripPipeline = null;
 
 	public static void main(String[] args) {
 		// Loads our OpenCV library. This MUST be included
-		System.loadLibrary("opencv_java320");
+		System.loadLibrary("opencv");
+		
+		myGripPipeline = new GripPipeline();
 
 		// Connect NetworkTables, and get access to the publishing table
 		NetworkTable.setClientMode();

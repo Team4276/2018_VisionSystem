@@ -26,7 +26,7 @@ public class GripPipeline {
     private ArrayList<MatOfPoint> findContoursOutput = new ArrayList<MatOfPoint>();
 
     static {
-        System.loadLibrary("opencv_java320");
+        System.loadLibrary("opencv");
     }
 
     /**
